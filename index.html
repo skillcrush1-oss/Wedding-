@@ -138,7 +138,7 @@ section{position:relative;padding:58px 24px;border-bottom:1px solid var(--line)}
 
 <section class="rsvp reveal" id="rsvp">
 <div class="center"><div class="kicker">ВАЖНАЯ ПРОЦЕДУРА</div><div class="intro">Подтвердите участие</div><p class="small">Пожалуйста, сообщите нам, сможете ли вы быть с нами 3 октября.</p></div>
-<form id="rsvpForm">
+<form id="rsvpForm" action="https://formspree.io/f/mljebdvv" method="POST">
 <label>Ваше имя</label><input required name="name" placeholder="Иван Иванов">
 <label>Будете?</label><select required name="attendance"><option value="">Выберите</option><option>Да, с удовольствием!</option><option>К сожалению, не смогу</option></select>
 <label>Будете один / с парой?</label><select name="plusone"><option>Один / одна</option><option>Буду с парой</option></select>
@@ -161,11 +161,31 @@ section{position:relative;padding:58px 24px;border-bottom:1px solid var(--line)}
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 
-document.getElementById('rsvpForm').addEventListener('submit',e=>{
-e.preventDefault();
-const f=new FormData(e.target);
-const text=`Свадьба Андрея и Анастасии%0A%0AИмя: ${encodeURIComponent(f.get('name'))}%0AУчастие: ${encodeURIComponent(f.get('attendance'))}%0AПара: ${encodeURIComponent(f.get('plusone'))}%0AКомментарий: ${encodeURIComponent(f.get('comment')||'—')}`;
-document.getElementById('rsvpStatus').innerHTML='Готово! Сейчас подключим к этой форме ваш способ получения ответов.';
+document.getElementById('rsvpForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+
+ const form=e.target;
+ const data=new FormData(form);
+
+ fetch(form.action,{
+   method:"POST",
+   body:data,
+   headers:{
+     "Accept":"application/json"
+   }
+ })
+ .then(response=>{
+   if(response.ok){
+     document.getElementById('rsvpStatus').innerHTML="Спасибо ❤️ Ваш ответ получен!";
+     form.reset();
+   } else {
+     document.getElementById('rsvpStatus').innerHTML="Ошибка отправки. Попробуйте ещё раз.";
+   }
+ })
+ .catch(()=>{
+   document.getElementById('rsvpStatus').innerHTML="Ошибка соединения.";
+ });
+});
 // Replace the next line with your final RSVP endpoint or VK/Telegram contact link.
 });
 </script>
