@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb">
+<meta name="description" content="Свадебное приглашение Андрея и Насти — 3 октября 2026">
+<title>Андрей & Анастасия · 03.10.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Roboto+Slab:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--paper:#f5f2ec;--paper2:#ebe6dc;--ink:#24221f;--muted:#777169;
+--red:#7f2829;--terr:#b85d43;--gold:#b18a43;--lemon:#d6bd47;--brown:#6a4b3c;
+--line:rgba(36,34,31,.22);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#171614;color:var(--ink);font-family:Inter,Arial,sans-serif}
+.page{width:min(100%,540px);margin:auto;background:var(--paper);overflow:hidden}
+section{position:relative;padding:58px 24px;border-bottom:1px solid var(--line)}
+.cover{min-height:100svh;padding:30px 22px;display:flex;flex-direction:column;justify-content:center;background:var(--paper);overflow:hidden}
+.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,242,236,.92) 0%,rgba(245,242,236,.65) 55%,rgba(245,242,236,.95) 100%),url('photo1.jpg') center/cover;filter:saturate(.7);z-index:0}
+.content{position:relative;z-index:1}
+.topline{font-family:"Roboto Slab",serif;font-weight:700;font-size:19px;letter-spacing:.05em;text-align:center}
+.case-no{display:flex;align-items:end;gap:10px;justify-content:center;margin:22px 0 10px;font-family:"Roboto Slab",serif}
+.case-no b{font-size:18px}.number{font-family:Caveat,cursive;font-size:38px;line-height:.8;border-bottom:1px solid var(--ink);min-width:190px;text-align:center}
+.patient{display:grid;grid-template-columns:105px 1fr;align-items:end;margin:18px auto;max-width:390px;font-family:"Roboto Slab",serif;font-size:14px}.patient span{color:#45413c}.script{font-family:Caveat,cursive;font-size:43px;border-bottom:1px solid #8b8780;line-height:.95}
+.diagnosis{margin:28px auto 0;max-width:390px;text-align:center;border:2px solid var(--red);padding:13px 12px;transform:rotate(-1.2deg);font-family:"Roboto Slab",serif;font-weight:700;color:var(--red);font-size:19px;letter-spacing:.04em;text-transform:uppercase}
+.stamp{display:inline-block;border:3px double var(--red);color:var(--red);padding:8px 14px;font-family:"Roboto Slab",serif;font-weight:700;font-size:14px;transform:rotate(-5deg);margin-top:25px}
+.center{text-align:center}.kicker{font-family:"Roboto Slab",serif;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase}.serif{font-family:"Roboto Slab",serif}.scriptbig{font-family:Caveat,cursive;font-size:64px;line-height:.8}
+.intro{font-family:"Roboto Slab",serif;font-size:27px;line-height:1.25;margin:13px 0}
+.small{font-size:13px;line-height:1.65;color:var(--muted)}
+.paper{background:#faf8f3;border:1px solid #cbc4b8;box-shadow:0 8px 25px rgba(40,30,20,.08);padding:24px 20px}
+.paper:after{content:"";position:absolute;left:15px;right:15px;bottom:10px;height:1px;background:rgba(0,0,0,.08)}
+.line{height:1px;background:var(--line);margin:18px 0}
+.photo{width:100%;display:block;object-fit:cover}.p1{aspect-ratio:4/5}.p2{aspect-ratio:16/10}.p3{aspect-ratio:4/5}.p4{aspect-ratio:4/5}.p5{aspect-ratio:4/5}
+.photo-frame{border:8px solid #eee9df;box-shadow:0 5px 18px rgba(0,0,0,.12);background:#eee9df}
+.photo-frame.rotate{transform:rotate(-1.2deg)}.photo-frame.rotate2{transform:rotate(1.2deg)}
+.history{font-family:"Roboto Slab",serif;font-size:15px;line-height:1.65}.history strong{font-weight:700}
+.checks{margin:20px 0;display:grid;gap:10px}.checks div{display:flex;gap:9px}.tick{color:var(--red);font-weight:700}
+.ecg{height:56px;margin:20px -24px 18px;background:repeating-linear-gradient(0deg,transparent 0 10px,rgba(127,40,41,.12) 10px 11px),repeating-linear-gradient(90deg,transparent 0 10px,rgba(127,40,41,.12) 10px 11px);position:relative;overflow:hidden}.ecg svg{position:absolute;inset:0;width:100%;height:100%}
+.timeline{margin:25px 0 0 7px;border-left:1px solid #aaa49b}.event{position:relative;padding:0 0 28px 25px}.event:before{content:"";position:absolute;left:-5px;top:4px;width:9px;height:9px;background:var(--red);border-radius:50%}.time{font-family:"Roboto Slab",serif;color:var(--red);font-weight:700;font-size:13px;letter-spacing:.08em}.event h3{font-family:"Roboto Slab",serif;font-size:23px;margin:5px 0}.event p{font-size:13px;color:var(--muted);line-height:1.55;margin:0}
+.dress-swatches{display:flex;flex-wrap:wrap;justify-content:center;gap:30px 22px;margin:30px 0 6px}
+.dress-swatch{display:flex;flex-direction:column;align-items:center;gap:12px;width:128px}
+.dress-swatch img{width:128px;height:auto;display:block}
+.dress-swatch span{font-family:"Roboto Slab",serif;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.map{display:block;text-decoration:none;color:var(--paper);background:var(--ink);padding:15px;text-align:center;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-top:20px}
+.rsvp{background:var(--paper2)}form{display:grid;gap:13px;margin-top:22px}label{font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:var(--muted)}input,select,textarea{font:inherit;background:#faf8f3;border:1px solid #bdb6ab;padding:13px;border-radius:0;outline:none}textarea{min-height:90px;resize:vertical}.btn{border:0;background:var(--red);color:white;padding:16px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:12px;cursor:pointer}
+.footer{padding:60px 24px;text-align:center;background:var(--ink);color:var(--paper)}.footer .small{color:#bdb8ae}.footer .scriptbig{font-size:72px;margin:10px 0}.footer .date{font-family:"Roboto Slab",serif;font-size:18px;letter-spacing:.12em}
+.reveal{opacity:0;transform:translateY(16px);transition:.7s ease}.reveal.on{opacity:1;transform:none}
+@media(min-width:700px){body{padding:20px 0}.page{box-shadow:0 0 60px rgba(0,0,0,.45)}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<section class="cover">
+<div class="content">
+<div class="topline">МЕДИЦИНСКАЯ КАРТА</div>
+<div class="case-no"><b>№</b><div class="number">03102026</div></div>
+<div class="patient"><span>Пациент</span><div class="script">Андрей</div></div>
+<div class="patient"><span>Пациент</span><div class="script">Анастасия</div></div>
+<div class="patient"><span>Дата</span><div class="number" style="font-size:32px">03.10.2026</div></div>
+<div class="diagnosis">Диагноз: любовь</div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="paper">
+<div class="kicker">АНАМНЕЗ ЗАБОЛЕВАНИЯ</div>
+<div class="ecg"><svg viewBox="0 0 540 56" preserveAspectRatio="none"><polyline fill="none" stroke="#7f2829" stroke-width="2" points="0,30 35,30 45,28 52,30 61,30 67,12 72,47 78,30 118,30 128,27 136,30 145,30 151,9 157,49 163,30 210,30 220,28 228,30 238,30 244,14 250,44 256,30 305,30 315,27 325,30 333,30 339,10 345,48 351,30 400,30 410,28 418,30 427,30 433,12 439,46 445,30 495,30 505,28 514,30 540,30"/></svg></div>
+<p class="history">В результате длительного наблюдения друг за другом у пациентов <strong>Андрея</strong> и <strong>Насти</strong> выявлена стойкая взаимная симпатия, постепенно перешедшая в хроническое желание быть рядом.</p>
+<div class="checks">
+<div><span class="tick">✓</span> учащённое сердцебиение при встрече</div>
+<div><span class="tick">✓</span> постоянная потребность видеть друг друга</div>
+<div><span class="tick">✓</span> совместные поездки и воспоминания</div>
+</div>
+<div class="center"><span class="stamp">ДИАГНОЗ ПОДТВЕРЖДЁН</span></div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="center"><div class="kicker">ИССЛЕДОВАНИЕ</div><div class="intro">Длительное наблюдение показало:</div></div>
+<div class="photo-frame rotate"><img class="photo p1" src="photo4.jpg" alt="Андрей и Настя"></div>
+</section>
+
+<section class="reveal">
+<div class="photo-frame rotate2"><img class="photo p2" src="photo2.jpg" alt="Андрей и Настя"></div>
+<div style="height:18px"></div>
+<div class="paper">
+<div class="kicker">ЗАКЛЮЧЕНИЕ КОНСИЛИУМА</div>
+<p class="history" style="margin-bottom:0">Самолечение признано неэффективным. Единственный доказанный метод терапии — <strong>официально поженить пациентов.</strong></p>
+<div class="center"><span class="stamp">НАЗНАЧИТЬ СВАДЬБУ</span></div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="center"><div class="kicker">ДАТА ОПЕРАЦИИ</div><div class="scriptbig">03 октября</div><div class="serif" style="font-size:24px">2026</div></div>
+<div class="line"></div>
+<div class="timeline">
+<div class="event"><div class="time">15:00</div><h3>Welcome & фуршет</h3><p>Собираемся, знакомимся, встречаем этот день вместе.</p></div>
+<div class="event"><div class="time">15:40</div><h3>Выездная регистрация</h3></div>
+<div class="event"><div class="time">ПОСЛЕ</div><h3>Праздничный приём</h3><p>Ужин, тосты, музыка, танцы и много времени друг для друга.</p></div>
+<div class="event">
+<div class="time">23:00</div>
+<h3>Конец мероприятия</h3>
+</div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="center"><div class="kicker">МЕСТО ПРОВЕДЕНИЯ</div><div class="intro">Forself</div><p class="small">ул. Зеленский Съезд, 4<br>Нижний Новгород</p></div>
+<a class="map" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=Нижний%20Новгород%2C%20ул.%20Зеленский%20Съезд%2C%204">Открыть место на карте</a>
+</section>
+
+<section class="reveal">
+<div class="center">
+<div class="kicker">ДРЕСС-КОД</div>
+<div class="intro">Будем ждать вас нарядными</div>
+<p class="small">Мы очень стараемся сделать праздник красивым и стильным. Поддержите нас вашими улыбками, объятиями, а также красивыми нарядами в палитре торжества.</p>
+</div>
+<div class="dress-swatches">
+<div class="dress-swatch"><img src="colors/terracotta.png" alt="Терракотовый"><span>Терракотовый</span></div>
+<div class="dress-swatch"><img src="colors/gold.png" alt="Золотой"><span>Золотой</span></div>
+<div class="dress-swatch"><img src="colors/lemon.png" alt="Лимонный"><span>Лимонный</span></div>
+<div class="dress-swatch"><img src="colors/brown.png" alt="Коричневый"><span>Коричневый</span></div>
+<div class="dress-swatch"><img src="colors/bordo.png" alt="Бордовый"><span>Бордовый</span></div>
+</div>
+<p class="small center" style="margin-top:26px">Но главное — приходите такими, какими вам комфортно.</p>
+</section>
+
+<section class="reveal">
+<div class="photo-frame rotate"><img class="photo p3" src="photo1.jpg" alt="Андрей и Настя у моря"></div>
+<div style="height:18px"></div>
+<div class="photo-frame rotate2"><img class="photo p4" src="photo3.jpg" alt="Андрей и Настя"></div>
+</section>
+
+<section class="rsvp reveal" id="rsvp">
+<div class="center"><div class="kicker">ВАЖНАЯ ПРОЦЕДУРА</div><div class="intro">Подтвердите участие</div><p class="small">Пожалуйста, сообщите нам, сможете ли вы быть с нами 3 октября.</p></div>
+<form id="rsvpForm">
+<label>Ваше имя</label><input required name="name" placeholder="Иван Иванов">
+<label>Будете?</label><select required name="attendance"><option value="">Выберите</option><option>Да, с удовольствием!</option><option>К сожалению, не смогу</option></select>
+<label>Будете один / с парой?</label><select name="plusone"><option>Один / одна</option><option>Буду с парой</option></select>
+<label>Комментарий</label><textarea name="comment" placeholder="Аллергии, пожелания или просто привет ❤️"></textarea>
+<button class="btn" type="submit">Отправить подтверждение</button>
+</form>
+<p id="rsvpStatus" class="small center" style="margin-top:15px"></p>
+</section>
+
+<section class="footer">
+<div class="small">МЕДИЦИНСКОЕ ЗАКЛЮЧЕНИЕ</div>
+<div class="scriptbig">Андрей & Настя</div>
+<div class="date">03 · 10 · 2026</div>
+<p class="small" style="margin-top:18px">Прогноз благоприятный.<br>Рекомендуется пожизненное совместное наблюдение.</p>
+</section>
+
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+
+document.getElementById('rsvpForm').addEventListener('submit',e=>{
+e.preventDefault();
+const f=new FormData(e.target);
+const text=`Свадьба Андрея и Анастасии%0A%0AИмя: ${encodeURIComponent(f.get('name'))}%0AУчастие: ${encodeURIComponent(f.get('attendance'))}%0AПара: ${encodeURIComponent(f.get('plusone'))}%0AКомментарий: ${encodeURIComponent(f.get('comment')||'—')}`;
+document.getElementById('rsvpStatus').innerHTML='Готово! Сейчас подключим к этой форме ваш способ получения ответов.';
+// Replace the next line with your final RSVP endpoint or VK/Telegram contact link.
+});
+</script>
+</body>
+</html>
